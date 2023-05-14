@@ -8,7 +8,7 @@ envhat_data = ENVHatSensorData(0, 0, 0, 0)  # Initialize with 0 values
 growlight_data = GrowLightsPowerUsageSensor(0)  # Initialize with 0 value
 aircon_data = AirconPowerUsageSensor(0)  # Initialize with 0 value
 client = InfluxDBWriter()  # Instantiate InfluxDB client
-# client.create_bucket(bucket_name = "Sensors (Testing)", description = "Testing Environment")
+client.create_bucket(bucket_name = "Sensors (Testing)", description = "Testing Environment")
 
 print("Sending simulated data")
 counter = 0

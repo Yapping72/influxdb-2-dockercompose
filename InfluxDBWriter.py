@@ -4,9 +4,9 @@ from influxdb_client import InfluxDBClient, QueryApi, Point, WritePrecision
 from influxdb_client.client.write_api import SYNCHRONOUS
 
 
-INFLUXDB_TOKEN = "gPtM-AAoqNMaeqHO-2w8XnhoL0vdLkPTlk-LRk8ZWwlhVTqwZW6YlfUOgjd6oyQbD_ZFca1WSjVoPCqD-agm5w=="
+INFLUXDB_TOKEN = "bkPxTXKY6zdXGWBnC8qi_-M59dCNjWQPGWGGutWhZQMC8UJ8RFfV__EqoPzehDdrDGZg68OuZJs-Wpyc15LaCA=="
 INFLUXDB_ORG = "my-org"
-URL = "http://35.240.148.191:8086" 
+URL = "http://172.18.0.2:8086" 
 
 class InfluxDBWriter:
     """Manages writing sensor data (Point) to InfluxDB Server"""
